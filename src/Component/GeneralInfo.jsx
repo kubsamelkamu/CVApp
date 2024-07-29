@@ -28,6 +28,17 @@ function GeneralInformation({onSubmit}){
     const handleEmailChange=()=>{
         setEmail(email);
     }
+    
+    const handleSubmit =() =>{
+        onSubmit({
+            profile,
+            fistName,
+            middleName,
+            lastName,
+            email,
+            phoneNumber
+        })
+    }
 
     const handleEdit = () =>{
         setEdit(true);
