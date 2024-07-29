@@ -2,19 +2,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    justify-content: center;
     padding: 20px;
     border: 2px solid  #333;
-    background-color: rgb(139, 133, 133);
+    background-color: rgb(156, 156, 156);
     border-radius: 10px;
     box-shadow:   0px 2px 5px rgba(0, 0, 0, 0.1);
-   
+    width: 100%;
+    margin-top: 80px;
+    margin-left: 200px;
 }
 
 .profilePicture{
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 25%;
     object-fit: cover;
     margin-bottom: 30px;
     border: 2px solid #ccc;
@@ -33,6 +35,7 @@
 }
 
 .input{
+   
     padding: 12px;
     border: 2px solid #ccc;
     border-radius: 5px;
