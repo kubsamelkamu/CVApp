@@ -32,20 +32,15 @@ function GeneralInformation(){
             />
             {profile && <img src={profile ? URL.createObjectURL(profile) : null} alt="Profile" />}
             <label htmlFor="firstName">First-Name:</label>
-            <input type="text" id="firstName" 
-            onChange={(fistName)=>setFirstName(fistName.target.value)}/>
+            <input type="text" id="firstName" onChange={handleFirstNameChange}/>
             <label htmlFor="middleName">Middle-Name</label>
-            <input type="text" id="middleName" 
-            onChange={(middleName)=>setMiddleName(middleName.target.value)}/>
+            <input type="text" id="middleName"  onChange={handleMiddleNameChange}/>
             <label htmlFor="lastName">Last Name:</label>
-            <input type="text" id="lastName" 
-            onChange={(lastName)=>setLastName(lastName.target.value)}/>
+            <input type="text" id="lastName" onChange={handleLastNameChange}/>
             <label htmlFor="email">Email:</label>
-            <input type="email" id="email" 
-            onChange={(email)=>setEmail(email.target.value)}/>
+            <input type="email" id="email" onChange={handleEmailChange}/>
             <label htmlFor="phoneNumber">Phone-Number</label>
-            <input type="tel" id="phoneNumber" 
-            onChange={(phoneNumber)=>setPhoneNumber(phoneNumber.target.value)}/>
+            <input type="tel" id="phoneNumber" onChange={handlePhoneNumberChange}/>
         </div>
     )
 
