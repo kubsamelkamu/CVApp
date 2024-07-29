@@ -43,6 +43,6 @@ function GeneralInformation(){
             <input type="tel" id="phoneNumber" onChange={handlePhoneNumberChange}/>
         </div>
     )
-
-
 }
+
+export default GeneralInformation;
