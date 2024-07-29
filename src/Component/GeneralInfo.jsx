@@ -54,13 +54,14 @@ function GeneralInformation({onSubmit}){
             {edit?(
                 
                 <>
-                <label className={styles.label} htmlFor="profile-picture">Profile</label><input className={styles.input} type="file" id="profile-picture " accept="image/*"
-                onChange={(e) => setProfile(e.target.files[0])} />
+                 <div className={styles.inputContainer}>
+                    <label className={styles.label} htmlFor="profile-picture">Profile</label>
+                    <input className={styles.input} type="file" id="profile-picture " accept="image/*"
+                    onChange={(e) => setProfile(e.target.files[0])} />
+                    
+                    {profile && <img  className={styles.profilePicture} 
+                    src={profile ? URL.createObjectURL(profile) : null} alt="Profile" />}
                 
-                {profile && <img  className={styles.profilePicture} 
-                src={profile ? URL.createObjectURL(profile) : null} alt="Profile" />}
-                
-                <div className={styles.inputContainer}>
                     <label className={styles.label} htmlFor="firstName">First-Name:</label>
                     <input className={styles.input} value={fistName} type="text" id="firstName" onClick={handleFirstNameChange}/>
                     <br />
@@ -83,7 +84,8 @@ function GeneralInformation({onSubmit}){
                 </>
             ):(
                 <div className={styles.submittedInfo}>
-                     {profile && <img src={profile} alt="Profile" className="profilePicture" />}
+                   {profile && <img  className={styles.profilePicture} 
+                    src={profile ? URL.createObjectURL(profile) : null} alt="Profile" />}
                     <p>First-Name {fistName}</p>
                     <p>Middle-Name {middleName}</p>
                     <p>Last-Name {lastName}</p>
