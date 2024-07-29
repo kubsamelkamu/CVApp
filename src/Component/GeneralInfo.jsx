@@ -52,7 +52,7 @@ function GeneralInformation({onSubmit}){
                 <input className={styles.input} type="tel" id="phoneNumber" onChange={handlePhoneNumberChange}/>
             </div>
                 <br />
-                <div className={styles.button}>
+                <div className={styles.buttons}>
                     <button type="button">Submit</button>
                     <button type="button">Edit</button>
                 </div>
