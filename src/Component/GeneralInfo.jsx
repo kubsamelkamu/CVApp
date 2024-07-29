@@ -44,9 +44,6 @@ function GeneralInformation(){
     return(
         <div className={styles.generalInfoContainer}>
             <h1>General Information</h1>
-            <div>
-                
-            </div>
             {edit?(
                 <>
                  <div className={styles.inputContainer}>
