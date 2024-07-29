@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from './GeneralInfo.module.css';
 
 
-function GeneralInformation(){
+function GeneralInformation({onSubmit}){
     const[profile,setProfile] = useState(null);
     const[fistName,setFirstName] = useState('');
     const[middleName,setMiddleName] =useState('');
@@ -51,7 +51,13 @@ function GeneralInformation(){
                 <label className={styles.label} htmlFor="phoneNumber">Phone-Number</label>
                 <input className={styles.input} type="tel" id="phoneNumber" onChange={handlePhoneNumberChange}/>
             </div>
-         
+                <br />
+                <div className={styles.button}>
+                    <button type="button">Submit</button>
+                    <button type="button">Edit</button>
+                </div>
+              
+           
         </div>
     );
 }
