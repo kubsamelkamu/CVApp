@@ -24,4 +24,8 @@ function EducationInfo(){
         setEdit(false);
     }
 
+    const handleEdit =()=>{
+        setEdit(true);
+    }
+
 }
