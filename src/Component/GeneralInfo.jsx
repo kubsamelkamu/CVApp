@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from './GeneralInfo.module.css';
-
+import PropTypes from 'prop-types';
 
 function GeneralInformation({onSubmit}){
     const[profile,setProfile] = useState(null);
@@ -61,5 +61,11 @@ function GeneralInformation({onSubmit}){
         </div>
     );
 }
+
+// validate props 
+GeneralInformation.propTypes ={
+    onSubmit: PropTypes.func.isRequired,
+}
+
 
 export default GeneralInformation;
