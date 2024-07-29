@@ -9,6 +9,9 @@ function GeneralInformation({onSubmit}){
     const[lastName,setLastName] = useState('');
     const[email,setEmail] = useState('');
     const[phoneNumber,setPhoneNumber] = useState('');
+    const[edit,setEdit] = useState(true);
+
+
 
     const handleFirstNameChange=()=>{
         setFirstName(fistName);
@@ -24,6 +27,10 @@ function GeneralInformation({onSubmit}){
     }
     const handleEmailChange=()=>{
         setEmail(email);
+    }
+
+    const handleEdit = () =>{
+        setEdit(true);
     }
 
     return(
@@ -56,8 +63,7 @@ function GeneralInformation({onSubmit}){
                     <button type="button">Submit</button>
                     <button type="button">Edit</button>
                 </div>
-              
-           
+                      
         </div>
     );
 }
