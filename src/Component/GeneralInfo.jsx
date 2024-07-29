@@ -1,4 +1,6 @@
 import { useState } from "react";
+import styles from './GeneralInfo.module.css';
+
 
 function GeneralInformation(){
     const[profile,setProfile] = useState(null);
