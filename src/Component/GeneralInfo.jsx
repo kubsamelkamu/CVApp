@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from './GeneralInfo.module.css';
+import styles from './Style.module.css';
 
 
 function GeneralInformation(){
@@ -42,7 +42,7 @@ function GeneralInformation(){
     }
 
     return(
-        <div className={styles.generalInfoContainer}>
+        <div className={styles.container}>
             <h1>General Information</h1>
             {edit?(
                 <>
