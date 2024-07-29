@@ -1,3 +1,6 @@
+body{
+    background-color: #a7c2e0;
+}
 .generalInfoContainer{
     display: flex;
     flex-direction: column;
