@@ -13,20 +13,20 @@ function GeneralInformation({onSubmit}){
 
 
 
-    const handleFirstNameChange=()=>{
-        setFirstName(fistName);
+    const handleFirstNameChange=(e)=>{
+        setFirstName(e.target.value);
     }
-    const handleMiddleNameChange=()=>{
-        setMiddleName(middleName);
+    const handleMiddleNameChange=(e)=>{
+        setMiddleName(e.target.value);
     }
-    const handleLastNameChange=()=>{
-        setLastName(lastName);
+    const handleLastNameChange=(e)=>{
+        setLastName(e.target.value);
     }
-    const handlePhoneNumberChange=()=>{
-        setPhoneNumber(phoneNumber);
+    const handlePhoneNumberChange=(e)=>{
+        setPhoneNumber(e.target.value);
     }
-    const handleEmailChange=()=>{
-        setEmail(email);
+    const handleEmailChange=(e)=>{
+        setEmail(e.target.value);
     }
 
     const handleSubmit =() =>{
