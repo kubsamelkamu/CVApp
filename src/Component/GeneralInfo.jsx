@@ -30,6 +30,7 @@ function GeneralInformation({onSubmit}){
     }
 
     const handleSubmit =() =>{
+        setEdit(false);
         onSubmit({
             profile,
             fistName,
@@ -61,19 +62,19 @@ function GeneralInformation({onSubmit}){
                 
                 <div className={styles.inputContainer}>
                     <label className={styles.label} htmlFor="firstName">First-Name:</label>
-                    <input className={styles.input} type="text" id="firstName" onChange={handleFirstNameChange}/>
+                    <input className={styles.input} value={fistName} type="text" id="firstName" onChange={handleFirstNameChange}/>
                     <br />
                     <label className={styles.label} htmlFor="middleName">Middle-Name</label>
-                    <input className={styles.input} type="text" id="middleName"  onChange={handleMiddleNameChange}/>
+                    <input className={styles.input} value={middleName} type="text" id="middleName"  onChange={handleMiddleNameChange}/>
                     <br />
                     <label className={styles.label} htmlFor="lastName">Last Name:</label>
-                    <input className={styles.input} type="text" id="lastName" onChange={handleLastNameChange}/>
+                    <input className={styles.input} value={lastName} type="text" id="lastName" onChange={handleLastNameChange}/>
                     <br />
                     <label className={styles.label} htmlFor="email">Email:</label>
-                    <input className={styles.input} type="email" id="email" onChange={handleEmailChange}/>
+                    <input className={styles.input} value={email} type="email" id="email" onChange={handleEmailChange}/>
                     <br />
                     <label className={styles.label} htmlFor="phoneNumber">Phone-Number</label>
-                    <input className={styles.input} type="tel" id="phoneNumber" onChange={handlePhoneNumberChange}/>
+                    <input className={styles.input} value={phoneNumber} type="tel" id="phoneNumber" onChange={handlePhoneNumberChange}/>
                 </div>
                   <br />
                   <div className={styles.buttons}>
