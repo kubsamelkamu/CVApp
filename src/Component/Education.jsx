@@ -1,4 +1,6 @@
 import { useState } from "react";
+import styles from './Style.module.css';
+
 
 function EducationInfo(){
     const[schoolName,setSchoolName] = useState('');
@@ -27,5 +29,14 @@ function EducationInfo(){
     const handleEdit =()=>{
         setEdit(true);
     }
+
+    return(
+        <div className={styles.container}>
+            <h1>Education Expreince</h1>
+            <div className={styles.inputContainer}>
+
+            </div>
+        </div>
+    )
 
 }
