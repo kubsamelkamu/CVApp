@@ -8,5 +8,12 @@ function GeneralInformation(){
     const[email,setEmail] = useState('');
     const[phoneNumber,setPhoneNumber] = useState('');
 
-    
+
+    return(
+        <div className="general-info">
+            
+        </div>
+    )
+
+
 }
