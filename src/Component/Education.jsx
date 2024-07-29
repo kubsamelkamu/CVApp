@@ -65,6 +65,7 @@ function EducationInfo(){
             )}
             
         </div>
-    )
+    );
 
 }
+export default EducationInfo
