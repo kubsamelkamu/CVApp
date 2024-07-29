@@ -1,4 +1,4 @@
-const { useState } = require("react");
+import { useState } from "react";
 
 function GeneralInformation(){
     const[profile,setProfile] = useState(null);
@@ -8,14 +8,29 @@ function GeneralInformation(){
     const[email,setEmail] = useState('');
     const[phoneNumber,setPhoneNumber] = useState('');
 
+    const handleFirstNameChange=()=>{
+        setFirstName(fistName);
+    }
+    const handleMiddleNameChange=()=>{
+        setMiddleName(middleName);
+    }
+    const handleLastNameChange=()=>{
+        setLastName(lastName);
+    }
+    const handlePhoneNumberChange=()=>{
+        setPhoneNumber(phoneNumber);
+    }
+    const handleEmailChange=()=>{
+        setEmail(email);
+    }
 
     return(
         <div className="general-info">
             <label htmlFor="profile-picture">Profile</label>
-            <input type="filr" id="profile-picture" 
+            <input type="file" id="profile-picture " accept="image/*" 
             onChange={(e)=>setProfile(e.target.files[0])}
             />
-            <img src={profile ? URL.createObjectURL(profile) : null} alt="Profile" />
+            {profile && <img src={profile ? URL.createObjectURL(profile) : null} alt="Profile" />}
             <label htmlFor="firstName">First-Name:</label>
             <input type="text" id="firstName" 
             onChange={(fistName)=>setFirstName(fistName.target.value)}/>
