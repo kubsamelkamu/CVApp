@@ -28,6 +28,11 @@ function GeneralInformation(){
     }
 
     const handleSubmit =() =>{
+        if (fistName.length < 2 || middleName.length <2 || lastName < 2 ) {
+            return;
+        }else if(phoneNumber.length < 8 || !email.includes('@')){
+            return;
+        }
         setEdit(false);
         
     }
