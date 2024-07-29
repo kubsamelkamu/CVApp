@@ -7,3 +7,20 @@
     border-radius: 10px;
     box-shadow:   0px 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+
+.profilePicture{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border: 2px solid #ccc;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
