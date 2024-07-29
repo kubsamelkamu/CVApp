@@ -1,8 +1,8 @@
 import { useState } from "react";
 import styles from './GeneralInfo.module.css';
-import PropTypes from 'prop-types';
 
-function GeneralInformation({onSubmit}){
+
+function GeneralInformation(){
     const[profile,setProfile] = useState(null);
     const[fistName,setFirstName] = useState('');
     const[middleName,setMiddleName] =useState('');
@@ -10,8 +10,6 @@ function GeneralInformation({onSubmit}){
     const[email,setEmail] = useState('');
     const[phoneNumber,setPhoneNumber] = useState('');
     const[edit,setEdit] = useState(true);
-
-
 
     const handleFirstNameChange=(e)=>{
         setFirstName(e.target.value);
@@ -31,14 +29,7 @@ function GeneralInformation({onSubmit}){
 
     const handleSubmit =() =>{
         setEdit(false);
-        onSubmit({
-            profile,
-            fistName,
-            middleName,
-            lastName,
-            email,
-            phoneNumber
-        })
+        
     }
 
     const handleEdit = () =>{
@@ -52,7 +43,6 @@ function GeneralInformation({onSubmit}){
                 
             </div>
             {edit?(
-                
                 <>
                  <div className={styles.inputContainer}>
                     <label className={styles.label} htmlFor="profile-picture">Profile</label>
@@ -63,7 +53,7 @@ function GeneralInformation({onSubmit}){
                     src={profile ? URL.createObjectURL(profile) : null} alt="Profile" />}
                 
                     <label className={styles.label} htmlFor="firstName">First-Name:</label>
-                    <input className={styles.input} value={fistName} type="text" id="firstName" onClick={handleFirstNameChange}/>
+                    <input className={styles.input} value={fistName} type="text" id="firstName" onChange={handleFirstNameChange}/>
                     <br />
                     <label className={styles.label} htmlFor="middleName">Middle-Name</label>
                     <input className={styles.input} value={middleName} type="text" id="middleName"  onChange={handleMiddleNameChange}/>
@@ -105,10 +95,6 @@ function GeneralInformation({onSubmit}){
     );
 }
 
-// validate props 
-GeneralInformation.propTypes ={
-    onSubmit: PropTypes.func.isRequired,
-}
 
 
 export default GeneralInformation;
