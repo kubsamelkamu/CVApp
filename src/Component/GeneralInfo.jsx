@@ -62,7 +62,7 @@ function GeneralInformation({onSubmit}){
                 
                 <div className={styles.inputContainer}>
                     <label className={styles.label} htmlFor="firstName">First-Name:</label>
-                    <input className={styles.input} value={fistName} type="text" id="firstName" onChange={handleFirstNameChange}/>
+                    <input className={styles.input} value={fistName} type="text" id="firstName" onClick={handleFirstNameChange}/>
                     <br />
                     <label className={styles.label} htmlFor="middleName">Middle-Name</label>
                     <input className={styles.input} value={middleName} type="text" id="middleName"  onChange={handleMiddleNameChange}/>
