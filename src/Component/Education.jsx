@@ -48,6 +48,17 @@ function EducationInfo(){
                       <button type="button" onClick={handleSubmit}>Submit</button>
                     </div>
             </div>
+            ):(
+                <div className={styles.submittedInfo}>
+                    {educationList.map((edu,index)=>(
+                        <div key={index}>
+                            <p>School:{schoolName}</p>
+                            <p>Title of Study:{title}</p>
+                            <p>Date of Study:{date}</p>
+                            <p>-----------------</p>
+                        </div>
+                    ))}
+                </div>
             )}
             
         </div>
