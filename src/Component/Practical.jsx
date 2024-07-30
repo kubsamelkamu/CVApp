@@ -15,7 +15,20 @@ function PracticalInfo(){
             <h1>Practical Expreince</h1>
             {edit?(
                 <div className={styles.inputContainer}>
-
+                    <label htmlFor="Company">Company Name</label>
+                    <input type="text" id="company" />
+                    <br />
+                    <label htmlFor="position">Position-Title</label>
+                    <input type="text" id="position" />
+                    <br />
+                    <label htmlFor="responsibilities">Responsiblity</label>
+                    <textarea type="text" id="responsibilities" />
+                    <br />
+                    <label htmlFor="start-Date">Start-Date</label>
+                    <input type="text" id="start-Date" />
+                    <br />
+                    <label htmlFor="endDate">End-Date</label>
+                    <input type="text" id="endDate" />
                 </div>
             )}
 
