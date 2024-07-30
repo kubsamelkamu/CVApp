@@ -33,10 +33,9 @@ function PracticalInfo(){
         }
     }
 
-
-
-
-
+    const handleEdit =()=>{
+        setEdit(true);
+    }
     return(
         <div className={styles.container}>
             <h1>Practical Expreince</h1>
