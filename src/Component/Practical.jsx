@@ -25,6 +25,14 @@ function PracticalInfo(){
         setDateTo(e.target.value);
     }
 
+    const handleSubmit =()=>{
+        if (company.length == 0 || position.length ==0 || responsibilities.length==0|| dateFrom.length == 0||dateTo.length == 0  ) {
+            alert('please Fill Forms .')
+        }else{
+            setEdit(false);
+        }
+    }
+
 
 
 
