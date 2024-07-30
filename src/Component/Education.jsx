@@ -21,6 +21,7 @@ function EducationInfo(){
 
     const handleSubmit=()=>{
         if (schoolName.length==0 || date.length ==0 || title.length == 0) {
+            alert('please Fill the Form!!!');
             return;
         }
         setEdit(false);
