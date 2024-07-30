@@ -7,7 +7,7 @@ function EducationInfo(){
     const[title,setTitle] = useState('');
     const[date,setDate] = useState('');
     const[edit,setEdit] = useState(true);
-    const[educationList,setEducationList] = useState([]);
+    
 
     const handleChangeSchool = (e)=>{
         setSchoolName(e.target.value);
@@ -17,16 +17,6 @@ function EducationInfo(){
     }
     const handleChangeDate=(e)=>{
         setDate(e.target.value);
-    }
-
-    const handleAddEducation=()=>{
-        if (schoolName && title && date){
-            const newEducationList = {schoolName,title,date};
-            setEducationList(...educationList,newEducationList);
-            setSchoolName('');
-            setDate('');
-            setTitle('');
-        }
     }
 
     const handleSubmit=()=>{
@@ -54,23 +44,14 @@ function EducationInfo(){
                     <label className={styles.label} htmlFor="date">Date of Study</label>
                     <input className={styles.input} value={date}  type="date" id="date" onChange={handleChangeDate} />
                     <div className={styles.buttons}>
-                      <button type="button" onClick={handleAddEducation}>Add</button>
                       <button type="button" onClick={handleSubmit}>Submit</button>
                     </div>
             </div>
             ):(
                 <div className={styles.submittedInfo}>
-                    {educationList.map((edu,index)=>(
-                        <div key={index}>
-                            <p>School:{schoolName}</p>
-                            <p>Title of Study:{title}</p>
-                            <p>Date of Study:{date}</p>
-                            <p>-----------------</p>
-                            <div className={styles.buttons}>
-                                <button type="button" onClick={handleEdit}>Edit</button>
-                            </div>
-                        </div>
-                    ))}
+                    <p>School-Name:{schoolName}</p>
+                    <p>Title of Study:{title}</p>
+                    <p>Date :{date}</p>
                 </div>
             )}
             
