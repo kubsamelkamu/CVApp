@@ -34,9 +34,14 @@ function PracticalInfo(){
                         <button type="button" onClick={handleSubmit}>Submit</button>
                     </div>
                 </div>
-                 
-                 
-
+            ):(
+                <div className={styles.submittedInfo}>
+                    <p>Company:{company}</p>
+                    <p>position title:{position}</p>
+                    <p>Responsiblities:{responsibilities}</p>
+                    <p>Start Date:{dateFrom}</p>
+                    <p>End Date:{dateTo}</p>
+                </div>
             )}
 
         </div>
