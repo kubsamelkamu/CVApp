@@ -10,6 +10,9 @@ function PracticalInfo(){
     const[edit,setEdit]=useState('');
 
 
+
+
+
     return(
         <div className={styles.container}>
             <h1>Practical Expreince</h1>
@@ -41,6 +44,9 @@ function PracticalInfo(){
                     <p>Responsiblities:{responsibilities}</p>
                     <p>Start Date:{dateFrom}</p>
                     <p>End Date:{dateTo}</p>
+                    <div className={styles.buttons}>
+                      <button type="button" onClick={handleEdit}>Edit</button>
+                    </div>
                 </div>
             )}
 
