@@ -74,6 +74,8 @@ function PracticalInfo(){
             )}
 
         </div>
-    )
+    );
 
 }
+
+export default PracticalInfo;
