@@ -63,9 +63,9 @@ body{
 }
 
 .buttons{
-    display: flexbox;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    
 }
 .buttons button{
     padding: 20px 40px;
