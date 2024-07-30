@@ -78,3 +78,8 @@ body{
     border-color: #4d5966;
     box-shadow: 0px 2px 3px rgb(28, 29, 28);
 }
+textarea{
+    width: 400px;
+    height: 200px;
+    resize: none;
+}
