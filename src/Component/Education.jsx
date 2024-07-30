@@ -9,6 +9,16 @@ function EducationInfo(){
     const[edit,setEdit] = useState(true);
     const[educationList,setEducationList] = useState([]);
 
+    const handleChangeSchool = (e)=>{
+        setSchoolName(e.target.value);
+    }
+    const handleChangeTitle=(e)=>{
+        setTitle(e.target.value);            
+    }
+    const handleChangeDate=(e)=>{
+        setDate(e.target.value);
+    }
+
     const handleAddEducation=()=>{
         if (schoolName && title && date){
             const newEducationList = {schoolName,title,date};
