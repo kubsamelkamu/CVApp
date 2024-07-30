@@ -13,10 +13,11 @@ function PracticalInfo(){
     return(
         <div className={styles.container}>
             <h1>Practical Expreince</h1>
-            <div className={styles.inputContainer}>
+            {edit?(
+                <div className={styles.inputContainer}>
 
-
-            </div>
+                </div>
+            )}
 
         </div>
     )
