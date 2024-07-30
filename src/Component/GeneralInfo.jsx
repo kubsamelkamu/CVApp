@@ -29,8 +29,10 @@ function GeneralInformation(){
 
     const handleSubmit =() =>{
         if (fistName.length < 2 || middleName.length <2 || lastName < 2 ) {
+            alert('please Correct Name');
             return;
         }else if(phoneNumber.length < 8 || !email.includes('@')){
+            alert('your Phone or email not Correct.');
             return;
         }
         setEdit(false);
