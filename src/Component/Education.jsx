@@ -46,13 +46,13 @@ function EducationInfo(){
             {edit?(
                 <div className={styles.inputContainer}>
                     <label className={styles.label} htmlFor="schoolName">School-Name</label>
-                    <input className={styles.input} value={schoolName}  type="text" id="schoolName" onChange={(e)=>e.target.value} />
+                    <input className={styles.input} value={schoolName}  type="text" id="schoolName" onChange={handleChangeSchool} />
                     <br />
                     <label className={styles.label} htmlFor="title">Title of study</label>
-                    <input className={styles.input} value={title}  type="text" id="title" onChange={(e)=>e.target.value} />
+                    <input className={styles.input} value={title}  type="text" id="title" onChange={handleChangeTitle} />
                     <br />
                     <label className={styles.label} htmlFor="date">Date of Study</label>
-                    <input className={styles.input} value={date}  type="date" id="date" onChange={(e)=>e.target.value} />
+                    <input className={styles.input} value={date}  type="date" id="date" onChange={handleChangeDate} />
                     <div className={styles.buttons}>
                       <button type="button" onClick={handleAddEducation}>Add</button>
                       <button type="button" onClick={handleSubmit}>Submit</button>
