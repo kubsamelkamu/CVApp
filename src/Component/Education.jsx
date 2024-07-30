@@ -52,6 +52,10 @@ function EducationInfo(){
                     <p>School-Name:{schoolName}</p>
                     <p>Title of Study:{title}</p>
                     <p>Date :{date}</p>
+
+                    <div className={styles.buttons}>
+                      <button type="button" onClick={handleEdit}>Edit</button>
+                    </div>
                 </div>
             )}
             
