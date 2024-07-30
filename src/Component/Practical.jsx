@@ -41,20 +41,20 @@ function PracticalInfo(){
             <h1>Practical Expreince</h1>
             {edit?(
                 <div className={styles.inputContainer}>
-                    <label htmlFor="Company">Company Name</label>
-                    <input type="text" id="company"  onChange={handleChangeCompany}/>
+                    <label className={styles.label} htmlFor="Company">Company Name</label>
+                    <input className={styles.input} type="text" id="company"  onChange={handleChangeCompany}/>
                     <br />
-                    <label htmlFor="position">Position-Title</label>
-                    <input type="text" id="position" onChange={handleChangePosition}/>
+                    <label className={styles.label} htmlFor="position">Position-Title</label>
+                    <input className={styles.input} type="text" id="position" onChange={handleChangePosition}/>
                     <br />
-                    <label htmlFor="responsibilities">Responsiblity</label>
+                    <label className={styles.label} htmlFor="responsibilities">Responsiblity</label>
                     <textarea type="text" id="responsibilities" onChange={handleChangeResponsiblity}/>
                     <br />
-                    <label htmlFor="start-Date">Start-Date</label>
-                    <input type="text" id="start-Date" onChange={handleChangeStartDate}/>
+                    <label className={styles.label} htmlFor="start-Date">Start-Date</label>
+                    <input className={styles.input} type="text" id="start-Date" onChange={handleChangeStartDate}/>
                     <br />
-                    <label htmlFor="endDate">End-Date</label>
-                    <input type="text" id="endDate" onChange={handleChangeEndDate} />
+                    <label className={styles.label} htmlFor="endDate">End-Date</label>
+                    <input className={styles.input} type="text" id="endDate" onChange={handleChangeEndDate} />
                      <br />
                     <div className={styles.buttons}>
                         <button type="button" onClick={handleSubmit}>Submit</button>
