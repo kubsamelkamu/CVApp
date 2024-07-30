@@ -43,6 +43,7 @@ function EducationInfo(){
                     <br />
                     <label className={styles.label} htmlFor="date">Date of Study</label>
                     <input className={styles.input} value={date}  type="date" id="date" onChange={handleChangeDate} />
+                    <br />
                     <div className={styles.buttons}>
                       <button type="button" onClick={handleSubmit}>Submit</button>
                     </div>
