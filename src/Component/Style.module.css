@@ -50,7 +50,7 @@ body{
 
 /* Responsive Desgin Style */
 @media (max-width:786px) {
-    .generalInfoContainer{
+    .container{
         padding:20px;
     }
     .profilePicture{
