@@ -29,7 +29,14 @@ function PracticalInfo(){
                     <br />
                     <label htmlFor="endDate">End-Date</label>
                     <input type="text" id="endDate" />
+                     <br />
+                    <div className={styles.buttons}>
+                        <button type="button" onClick={handleSubmit}>Submit</button>
+                    </div>
                 </div>
+                 
+                 
+
             )}
 
         </div>
