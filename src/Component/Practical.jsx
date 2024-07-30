@@ -9,6 +9,22 @@ function PracticalInfo(){
     const[dateTo,setDateTo]=useState('');
     const[edit,setEdit]=useState('');
 
+    const handleChangeCompany = (e) =>{
+        setCompany(e.target.value);
+    }
+    const handleChangePosition=(e)=>{
+        setPosition(e.target.value);
+    }
+    const handleChangeResponsiblity=(e)=>{
+        setResponsibilities(e.target.value);
+    }
+    const handleChangeStartDate=(e)=>{
+        setDateFrom(e.target.value);
+    }
+    const handleChangeEndDate=(e)=>{
+        setDateTo(e.target.value);
+    }
+
 
 
 
