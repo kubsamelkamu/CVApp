@@ -51,10 +51,10 @@ function PracticalInfo(){
                     <textarea type="text" id="responsibilities" onChange={handleChangeResponsiblity}/>
                     <br />
                     <label className={styles.label} htmlFor="start-Date">Start-Date</label>
-                    <input className={styles.input} type="text" id="start-Date" onChange={handleChangeStartDate}/>
+                    <input className={styles.input} type="date" id="start-Date" onChange={handleChangeStartDate}/>
                     <br />
                     <label className={styles.label} htmlFor="endDate">End-Date</label>
-                    <input className={styles.input} type="text" id="endDate" onChange={handleChangeEndDate} />
+                    <input className={styles.input} type="date" id="endDate" onChange={handleChangeEndDate} />
                      <br />
                     <div className={styles.buttons}>
                         <button type="button" onClick={handleSubmit}>Submit</button>
