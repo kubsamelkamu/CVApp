@@ -7,7 +7,7 @@ function PracticalInfo(){
     const[responsibilities,setResponsibilities] = useState('');
     const[dateFrom,setDateFrom]=useState('');
     const[dateTo,setDateTo]=useState('');
-    const[edit,setEdit]=useState('');
+    const[edit,setEdit]=useState(true);
 
     const handleChangeCompany = (e) =>{
         setCompany(e.target.value);
@@ -26,8 +26,9 @@ function PracticalInfo(){
     }
 
     const handleSubmit =()=>{
-        if (company.length == 0 || position.length ==0 || responsibilities.length==0|| dateFrom.length == 0||dateTo.length == 0  ) {
+        if (company.length == 0 || position.length ==0 || responsibilities.length==0|| dateFrom.length == 0||!dateTo.length == 0  ) {
             alert('please Fill Forms .')
+            return;
         }else{
             setEdit(false);
         }
